@@ -1,0 +1,23 @@
+{
+  "name": "csv-viewer",
+  "version": "1.0.0",
+  "description": "csv-viewer written in electron.js",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mangangreg/csv-viewer.git"
+  },
+  "author": "Greg Mangan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mangangreg/csv-viewer/issues"
+  },
+  "homepage": "https://github.com/mangangreg/csv-viewer#readme",
+  "devDependencies": {
+    "electron": "^8.2.3"
+  }
+}
