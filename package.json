@@ -19,5 +19,10 @@
   "homepage": "https://github.com/mangangreg/csv-viewer#readme",
   "devDependencies": {
     "electron": "^8.2.3"
+  },
+  "dependencies": {
+    "csv": "^5.3.2",
+    "csv-parse": "^4.9.0",
+    "csv-parser": "^2.3.2"
   }
 }

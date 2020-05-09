@@ -1,0 +1,40 @@
+body{
+	background: #e0e0e0;
+	font-family: monospace;
+	font-size: 18px;
+}
+.header{
+	width:100%;
+	display: flex;
+	justify-content: center;
+}
+h1{
+	/* color:blue */
+	text-transform: uppercase;
+}
+
+#table-wrapper{
+	width: calc(100% - 4rem);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 2rem;
+}
+
+table.csv{
+	border: 1px solid white;
+	border-radius: 4px;
+}
+
+table.csv tr:hover{
+	background: white;
+	cursor:pointer;
+}
+table.csv th{
+	font-weight: 600;
+}
+table.csv td{
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}

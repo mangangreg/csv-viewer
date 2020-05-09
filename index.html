@@ -2,20 +2,55 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Hello World!</title>
-    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
-  </head>
+    <title>CSV Viewer</title>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+    </head>
 
 	<body>
-		<h1> Hello! Welcome to Eletron </h1>
+		<div class="header">
+			<h1> CSV - viewer </h1>
+		</div>
 
-		We are using node <script>document.write(process.versions.node)</script>
-		Chrome <script>document.write(process.versions.chrome)</script>
-		
+		<div id="table-wrapper">
+			<table class="csv">
+				<tr>
+					<th> col1 </th>
+					<th> col2 </th>
+					<th> col3 </th>
+					<th> col4 </th>
+				</tr>
+				<tr>
+					<td> a </td>
+					<td> b </td>
+					<td> c </td>
+					<td> d </td>
+				</tr>
+			</table>
 
+		</div>
 	</body>
 
 
 
+
 </html>
+
+<script id="table-template" type="text/html">
+	<table class="csv">
+		<tr>
+			{{#each headers}}
+				<th> {{this}} </th>
+			{{/each}}
+		</tr>
+		{{#each rows}}
+			<tr>
+				{{#each this}}
+					<td> {{this}} </td>
+				{{/each}}
+			</tr>
+		{{/each}}
+	</table>
+</script>
