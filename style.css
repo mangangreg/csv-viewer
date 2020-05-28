@@ -1,5 +1,5 @@
 body{
-	background: #e0e0e0;
+	background: white;
 	font-family: monospace;
 	font-size: 18px;
 }
@@ -7,34 +7,62 @@ body{
 	width:100%;
 	display: flex;
 	justify-content: center;
+	color: #E98515;
 }
-h1{
-	/* color:blue */
+.header nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .button{
+	border: 1px solid #FAD4B0;
+	border-radius: 2px;
+	padding: 0.2rem;
+		cursor:pointer;
+}
+#docTitle{
+	flex-grow: 1;
+	font-size: 2rem;
+	font-weight: 600;
 	text-transform: uppercase;
+	text-align: center;
 }
 
 #table-wrapper{
-	width: calc(100% - 4rem);
+	width: calc(100% - 1rem);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 2rem;
+	padding: 0.5rem;
 }
 
 table.csv{
-	border: 1px solid white;
+	/* border: 1px solid white; */
 	border-radius: 4px;
 }
 
 table.csv tr:hover{
-	background: white;
+	background: #d3e5ff;
 	cursor:pointer;
 }
 table.csv th{
 	font-weight: 600;
+	color: #E98515;
+	border-bottom: 2px solid;
+	position: sticky;
+	top: 0;
+	background: white;
+}
+table.csv tr{
+	/* border-right: 1px solid white; */
 }
 table.csv td{
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	border-top: 1px solid #FAD4B0;
+	color: #0c1040
+
 }

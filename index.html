@@ -11,11 +11,15 @@
 
 	<body>
 		<div class="header">
-			<h1> CSV - viewer </h1>
+			<nav>
+				<div class="button" onclick="clickOpen()"> Open </div>
+
+				<div id="docTitle"> CSV - viewer </div>
+			</nav>
 		</div>
 
 		<div id="table-wrapper">
-			<table class="csv">
+			<!-- <table class="csv">
 				<tr>
 					<th> col1 </th>
 					<th> col2 </th>
@@ -28,7 +32,7 @@
 					<td> c </td>
 					<td> d </td>
 				</tr>
-			</table>
+			</table> -->
 
 		</div>
 	</body>
@@ -39,7 +43,7 @@
 </html>
 
 <script id="table-template" type="text/html">
-	<table class="csv">
+	<table class="csv" cellspacing="0">
 		<tr>
 			{{#each headers}}
 				<th> {{this}} </th>
