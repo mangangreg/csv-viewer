@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/mangangreg/csv-viewer#readme",
   "devDependencies": {
-    "electron": "^8.2.3"
+    "electron": "^13.6.6"
   },
   "dependencies": {
     "csv": "^5.3.2",
